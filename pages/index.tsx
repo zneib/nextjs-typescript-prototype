@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+enum Role { ADMIN, USER, SUPERUSER }
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -20,6 +22,7 @@ const Home: NextPage = () => {
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx</code>
+          <p>{Role.ADMIN}</p>
         </p>
 
         <div className={styles.grid}>
