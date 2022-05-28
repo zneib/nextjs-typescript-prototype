@@ -10,8 +10,14 @@ const OptionalChaining: NextPage = () => {
 
   console.log(fetchedUserData?.job?.title)
 
+  const userInput = ''
+
+  const storedData = userInput ?? 'DEFAULT'
+
+  console.log(storedData)
+
   return (
-    <h1>Optional Chaining</h1>
+    <h1>Optional Chaining and Nullish Coalescing</h1>
   )
 }
 
