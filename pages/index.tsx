@@ -67,6 +67,7 @@ const Home: NextPage = () => {
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
+        <input type="text" id="user-input" />
       </footer>
     </div>
   )
